@@ -17,7 +17,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
      react.includes("kosar") || 
 react.includes("owner")) {
 		var msg = {
-				body: "★𝗢𝘄𝗻𝗲𝗿 + ❤️...𝐊𝐨𝐬𝐚𝐫 𝐁𝐚𝐥𝐨𝐜𝐡...❤️ ● ──────────────── ●𝐊𝐨𝐬𝐚𝐫 𝐁𝐚𝐥𝐨𝐜𝐡 ● ──────────────── ●𝐎𝐰𝐧𝐞𝐫 ➻❤️....𝐊𝐨𝐬𝐚𝐫 𝐁𝐚𝐥�vir....❤️",attachment: fs.createReadStream(__dirname + `/noprefix/owner.jpeg`)
+				body: "★𝗢𝘄𝗻𝗲𝗿 + ❤️...𝐊𝐨𝐬𝐚𝐫 𝐁𝐚𝐥𝐨𝐜𝐡...❤️ ● ──────────────── ●𝐊𝐨𝐬𝐚𝐫 𝐁𝐚𝐥𝐨𝐜𝐡 ● ──────────────── ●𝐎𝐰𝐧𝐞𝐫 ➻❤️....𝐊𝐨𝐬𝐚𝐫 𝐁𝐚𝐥𝐨𝐜𝐡....❤️",attachment: fs.createReadStream(__dirname + `/noprefix/owner.jpeg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("📷", event.messageID, (err) => {}, true)
